@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Facebook Clarity: Remove Suggested Posts",
+    "version": "1.0",
+    "description": "A simple extension to remove suggested posts from Facebook.",
+    "permissions": [      
+        "storage"
+      ],
+      "host_permissions": [
+        "*://facebook.com/*",
+        "*://*.facebook.com/*"
+    ],
+    "action": {
+        "default_popup": "hello.html",
+        "default_icon": {
+        "16": "images/icon128.png",
+        "48": "images/icon128.png",
+        "128": "images/icon128.png"
+        }
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*.facebook.com/*"],
+          "run_at": "document_end",
+          "js": ["scripts/contentScript.js"]
+        }
+      ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "images/icon128.png",
+        "48": "images/icon128.png",
+        "128": "images/icon128.png"
+    }
+  }
