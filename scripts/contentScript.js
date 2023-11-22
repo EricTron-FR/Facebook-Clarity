@@ -24,7 +24,7 @@ function initContentScript() {
 
     observer.observe(document.body, { childList: true, subtree: true });
 
-    const searchTexts = ['Suggested for you', 'Another text', 'More text'];
+    const searchTexts = ['Suggested for you', 'Suggestions', 'Sugerencia para ti','Vorschläge für dich','Contenuto suggerito per te'];
 
 
     function removeDivContainingSpan() {
