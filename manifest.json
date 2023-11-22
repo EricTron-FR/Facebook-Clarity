@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Facebook Clarity: Remove Suggested Posts",
-    "version": "1.0",
+    "version": "1.1",
     "description": "A simple extension to remove suggested posts from Facebook.",
     "permissions": [      
         "storage"
